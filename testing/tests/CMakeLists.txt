@@ -1,4 +1,5 @@
-cmake_minimum_required(VERSION 3.15-3.18)
+# version 3.11 or later of CMake or needed later for installing GoogleTest
+cmake_minimum_required(VERSION 3.11-3.18)
 
 include(GoogleTest)
 include(CTest)
