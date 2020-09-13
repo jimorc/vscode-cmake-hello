@@ -42,3 +42,16 @@ In addition to these folders, a .gitignore file, which is created in [the articl
 https://computingonplains.wordpress.com/building-c-applications-with-visual-studio-code-saving-the-project-to-source-control-using-git/),
 is located in the root directory for this repository.
 
+# How to Use This Repository
+
+Clone the repository to your Projects file. If you have not already done so, set up your IDE. If you intend to use Visual Studio
+Code and have not installed it yet, then follow the instructions in the first article.
+On Windows, open Developer Command Prompt. On any Unix-like system, open a terminal. Change directories to your Projects directory, then:
+`cd vscode-cmake-hello
+cd part1
+code .`
+
+This opens VS Code in the part1 folder. You can build the project from within the IDE using CMake. Again, instructions are included in the first
+article.
+
+Similarly, you can change to either of the other two folders and build the project using CMake. See the user manual for your IDE for instructions.
