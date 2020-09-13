@@ -7,4 +7,25 @@ using "Modern" CMake and Visual Studio Code to create a simple C++ library and a
 project is further enhanced to create unit tests using Google Test. CMake files are created to
 download and build Google Test and to integrate it into the project.
 
+Looking at the code for this repository, you will see that there are three subdirectories in the
+root directory. They contain the following:
+
+## part1
+
+part1 contains the C++ and CMake code that corresponds to the code developed in
+[Building C++ Applications With CMake and Visual Studio Code[(
+https://computingonplains.wordpress.com/building-c-applications-with-cmake-and-visual-studio-code/).
+In that article, a simple C++ static library and program are created. The CMake directives in the
+CMakeLists.txt files required to build the library and program are described.
+
+## shared_libs
+
+shared_libs contains all of the code from part1 and the changes requilred to change the library
+from static to shared. The changes are described in
+[Building C++ Applications With Visual Studio Code – Creating a Shared Library{
+(https://computingonplains.wordpress.com/building-c-applications-with-visual-studio-code-creating-a-shared-library/).
+An alternative method that works only on Windows using the Visual Studio build tools is described.
+
+
+
 
