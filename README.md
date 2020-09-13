@@ -20,11 +20,11 @@ CMakeLists.txt files required to build the library and program are described.
 
 ## shared_libs
 
-shared_libs contains all of the code from part1 and the changes requilred to change the library
+shared_libs contains all of the code from part1 and the changes required to change the library
 from static to shared. The changes are described in
 [Building C++ Applications With Visual Studio Code – Creating a Shared Library](
 https://computingonplains.wordpress.com/building-c-applications-with-visual-studio-code-creating-a-shared-library/).
-An alternative method that works only on Windows using the Visual Studio build tools is described.
+An alternative method that works only on Windows using the Visual Studio build tools is also described in that article.
 
 ## testing
 
