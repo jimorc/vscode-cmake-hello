@@ -47,10 +47,11 @@ is located in the root directory for this repository.
 Clone the repository to your Projects file. If you have not already done so, set up your IDE. If you intend to use Visual Studio
 Code and have not installed it yet, then follow the instructions in the first article.
 On Windows, open Developer Command Prompt. On any Unix-like system, open a terminal. Change directories to your Projects directory, then:
-`cd vscode-cmake-hello
+```
+cd vscode-cmake-hello
 cd part1
-code .`
-
+code .
+```
 This opens VS Code in the part1 folder. You can build the project from within the IDE using CMake. Again, instructions are included in the first
 article.
 
