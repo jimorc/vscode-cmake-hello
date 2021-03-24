@@ -1,5 +1,5 @@
-# version 3.11 or later of CMake or needed later for installing GoogleTest
-cmake_minimum_required(VERSION 3.11-3.18)
+# version 3.15 or later of CMake is needed for GoogleTest on Windows
+cmake_minimum_required(VERSION 3.15)
 
 include(GoogleTest)
 include(CTest)
@@ -16,8 +16,11 @@ FetchContent_Declare(
 FetchContent_GetProperties(googletest)
 if(NOT googletest_POPULATED)
   FetchContent_Populate(googletest)
+  if(MSVC)
+    add_compile_options(/MD$<$<CONFIG:Debug>:d>)
+  endif()   # MSVC
   add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BINARY_DIR})
-endif()
+endif()     # NOT googletest_POPULATED
 
 mark_as_advanced(
     BUILD_GMOCK BUILD_GTEST BUILD_SHARED_LIBS
@@ -43,5 +46,3 @@ endmacro()
 message("${PROJECT_DIR}")
 
 package_add_test_with_libraries(HelloTests hellotests.cpp hello "${PROJECT_DIR}")
-
-
